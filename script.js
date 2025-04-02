@@ -1,13 +1,13 @@
 let rock = "rock";
 let paper = "paper";
 let scissors = "scissors";
-
-function getComputerChoice(choice){
+const rngChoice = Math.floor(Math.random() * 3);
+function getComputerChoice(rngChoice){
     //code needs to set results--0, 1, 2-- to a string--rock, paper, scissors
-    let rngChoice = Math.floor(Math.random() * choice );
+
 
     if (rngChoice === 0){
-        choice= rock;
+        rngChoice= rock;
     }
     else if (rngChoice === 1){
         choice = paper;
@@ -20,14 +20,14 @@ function getComputerChoice(choice){
 
 function getPlayerChoice(playerChoice){
 
-    if (playerChoice === 0){
-        playerChoice= rock;
+    if (playerChoice === rock){
+        playerChoice= 0;
     }
-    else if (rngPlayerChoice === 1){
-        playerChoice = paper;
+    else if (playerChoice === paper){
+        playerChoice = 1;
     }
     else{
-        playerChoice = scissors;
+        playerChoice = 2;
     }
     return playerChoice;
 }
@@ -36,6 +36,14 @@ function compareChoices(COMChoice, P1Choice){
     COMChoice = function getComputerChoice(choice){}
     P1Choice = function getPlayerChoice(playerChoice){};
 
-    if (COMChoice === P1Choice){}
+    if
+
+    else if{
+
+    }
+    else{
+        prompt("Draw! Play again"a);
+    }
 }
 
+console.log(getComputerChoice(1))
