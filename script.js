@@ -1,32 +1,42 @@
+let rock = "rock";
+let paper = "paper";
+let scissors = "scissors";
+
 function getComputerChoice(choice){
     //code needs to set results--0, 1, 2-- to a string--rock, paper, scissors
     let rngChoice = Math.floor(Math.random() * 3);
 
     if (rngChoice === 0){
-        choice= "scissors";
+        choice= rock;
     }
     else if (rngChoice === 1){
-        choice = "paper";
+        choice = paper;
     }
     else{
-        choice = "rock";
+        choice = scissors;
     }
-
     return choice;
 }
 
-function getPlayerChoice(choice){
-    let rngPlayerChoice = Math.floor(Math.random() * 3);
+function getPlayerChoice(playerChoice){
 
-    if (rngPlayerChoice === 0){
-        choice= "scissors";
+    if (playerChoice === 0){
+        playerChoice= rock;
     }
     else if (rngPlayerChoice === 1){
-        choice = "paper";
+        playerChoice = paper;
     }
     else{
-        choice = "rock";
+        playerChoice = scissors;
     }
-
-    return choice;
+    return playerChoice;
 }
+
+function compareChoices(COMChoice, P1Choice){
+    COMChoice = function getComputerChoice(choice){}
+    P1Choice = function getPlayerChoice(playerChoice){};
+
+    if (COMChoice === P1Choice){}
+}
+
+console.log(compareChoices(COMChoice, rock))
