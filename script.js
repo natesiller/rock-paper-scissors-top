@@ -4,7 +4,7 @@ let scissors = "scissors";
 
 function getComputerChoice(choice){
     //code needs to set results--0, 1, 2-- to a string--rock, paper, scissors
-    let rngChoice = Math.floor(Math.random() * 3);
+    let rngChoice = Math.floor(Math.random() * choice );
 
     if (rngChoice === 0){
         choice= rock;
@@ -39,4 +39,3 @@ function compareChoices(COMChoice, P1Choice){
     if (COMChoice === P1Choice){}
 }
 
-console.log(compareChoices(COMChoice, rock))
