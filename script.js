@@ -40,7 +40,9 @@ function playRound(humanChoice, computerChoice){
     if (humanChoice === computerChoice){
         return "You tied!"
     }
-    else if (){}
+    else if (){
+
+    }
 }
 const humanSelection = getHumanChoice();
 const computerChoice = getComputerChoice();
