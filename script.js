@@ -1,49 +1,30 @@
-let rock = "rock";
-let paper = "paper";
-let scissors = "scissors";
-const rngChoice = Math.floor(Math.random() * 3);
-function getComputerChoice(rngChoice){
-    //code needs to set results--0, 1, 2-- to a string--rock, paper, scissors
+//score log
+let humanScore = 0;
+let computerScore = 0;
 
+function getComputerChoice(){
+    //math.random function
+    let result = Math.floor(Math.random() * 3);
 
-    if (rngChoice === 0){
-        rngChoice= rock;
+    if (result === 0) {
+        return "rock";
     }
-    else if (rngChoice === 1){
-        choice = paper;
-    }
-    else{
-        choice = scissors;
-    }
-    return choice;
-}
-
-function getPlayerChoice(playerChoice){
-
-    if (playerChoice === rock){
-        playerChoice= 0;
-    }
-    else if (playerChoice === paper){
-        playerChoice = 1;
+    else if (result === 1) {
+        return "paper";
     }
     else{
-        playerChoice = 2;
-    }
-    return playerChoice;
-}
-
-function compareChoices(COMChoice, P1Choice){
-    COMChoice = function getComputerChoice(choice){}
-    P1Choice = function getPlayerChoice(playerChoice){};
-
-    if
-
-    else if{
-
-    }
-    else{
-        prompt("Draw! Play again"a);
+        return "scissors";
     }
 }
 
-console.log(getComputerChoice(1))
+function getHumanChoice() {
+    //use prompt to get input
+    let sign = prompt("Please enter rock, paper, or scissors");
+    if (sign === null) {
+        console.log("OK, maybe next time.");
+    }
+
+}
+console.log(getHumanChoice());
+//write a function that takes both scores, compares them, and
+//then increments the winners score and logs a winner announcement
