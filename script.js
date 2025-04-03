@@ -40,11 +40,22 @@ function playRound(humanChoice, computerChoice){
     if (humanChoice === computerChoice){
         return "You tied!"
     }
-    else if (){
-
+    else if ("rock" && "scissors"){
+        return "Rock beats scissors";
     }
+    else if("paper" && "scissors"){
+        return "Scissors beats paper";
+    }
+    else if("paper" && "rock"){
+        return "Paper beats rock";
+    }
+}
+
+function scoreUpdate(){
+
 }
 const humanSelection = getHumanChoice();
 const computerChoice = getComputerChoice();
+
 //write a function that takes both scores, compares them, and
 //then increments the winners score and logs a winner announcement
