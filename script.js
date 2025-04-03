@@ -35,8 +35,7 @@ function getHumanChoice() {
 }
 
 function playRound(humanChoice, computerChoice){
-    //need to pull the answers from the previous functions
-    //after pulling them, compare by string only to see who wins
+    //compare by string only to see who wins
     //write it so it displays which one won ("Paper beats rock!")
     if (humanChoice === computerChoice){
         return "You tied!"
