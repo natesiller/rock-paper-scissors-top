@@ -1,5 +1,5 @@
 //score log
-let humanScore = 0;
+/*let humanScore = 0;
 let computerScore = 0;
 
 function getComputerChoice(){
@@ -34,28 +34,55 @@ function getHumanChoice() {
     }
 }
 
-function playRound(humanChoice, computerChoice){
-    //compare by string only to see who wins
-    //write it so it displays which one won ("Paper beats rock!")
-    if (humanChoice === computerChoice){
-        return "You tied!"
-    }
-    else if ("rock" && "scissors"){
-        return "Rock beats scissors";
-    }
-    else if("paper" && "scissors"){
-        return "Scissors beats paper";
-    }
-    else if("paper" && "rock"){
-        return "Paper beats rock";
-    }
+function playRound(humanChoice, computerChoice) {
+    // your code here!
+    humanChoice =
 }
 
-function scoreUpdate(){
-
-}
 const humanSelection = getHumanChoice();
-const computerChoice = getComputerChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
+*/
+
 
 //write a function that takes both scores, compares them, and
 //then increments the winners score and logs a winner announcement
+
+
+function compareChoices() {
+    // Get user input using prompt
+    let userInput = prompt("Enter your choice (e.g., rock, paper, scissors):");
+
+    // Handle cases where the user cancels the prompt
+    if (userInput === null) {
+        return "No input received.";
+    }
+
+    userInput = userInput.toLowerCase(); // Convert to lowercase for case-insensitive comparison
+
+    // Generate a random choice for the computer
+    const choices = ["rock", "paper", "scissors"];
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    const computerChoice = choices[randomIndex];
+
+    // Compare choices and return a value
+    if (userInput === computerChoice) {
+        return "It's a tie!";
+    } else if (
+        (userInput === "rock" && computerChoice === "scissors") ||
+        (userInput === "paper" && computerChoice === "rock") ||
+        (userInput === "scissors" && computerChoice === "paper")
+    ) {
+        return "You win!";
+    } else if (choices.includes(userInput)){
+        return "Computer wins!";
+    }
+    else {
+        return "Invalid input. Please enter rock, paper, or scissors.";
+    }
+}
+
+// Example of calling the function and displaying the result
+const result = compareChoices();
+console.log(result);
