@@ -38,13 +38,14 @@ function playRound(humanChoice, computerChoice){
 // let humanSelection = userInput;
 // let compuerSelection = getComputerChoice();
 
-function playGame(){
-    for (let i = 1; i < 5; i++){
-       playRound();
-       let iterationUserInput = prompt("Enter your choice of rock, paper, or scissors");
-       userInput = iterationUserInput;
-       }
-    alert(`Human score = ${humanScore} \nComputer score = ${computerScore}`);
-}
+// function playGame(){
+//     for (let i = 1; i < 5; i++){
+//        playRound();
+//        let iterationUserInput = prompt("Enter your choice of rock, paper, or scissors");
+//        userInput = iterationUserInput;
+//        }
+//     alert(`Human score = ${humanScore} \nComputer score = ${computerScore}`);
+// }
+
 
 console.log(playGame());
